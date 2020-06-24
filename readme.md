@@ -1,5 +1,6 @@
-#投票系統 -- GoVote\n
-組員: B06901071 何承叡, B06901074 李崇嘉, B06901072 黃奕呈
+# 投票系統 -- GoVote  
+組員: B06901071 何承叡, B06901074 李崇嘉, B06901072 黃奕呈  
+
 
 如何建立環境:
 	1. 在terminal中執行: ganache-cli --allowUnlimitedContractSize  --gasLimit 0xFFFFFFFFFFFF
