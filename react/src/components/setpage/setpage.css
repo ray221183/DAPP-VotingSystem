@@ -1,0 +1,62 @@
+#itemname{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    color: #000000;
+}
+
+#candidateUI{
+    position: absolute;
+    top: 200px;
+    left:30%;
+    margin: 0px 0px 0px -200px;
+    padding: 0px;
+    width: 475px;
+    height: 400px;
+    background-color: #FAFAFA;
+    border-style: solid;
+    border-radius:10px;
+    border-width: 2px;
+    border-color: #BFBFBF;
+}
+
+#candidatename-label{
+    position: relative;
+    top: 5%;
+    left: 5%;
+    display: inline-block;
+}
+
+#addcandidate{
+    position: relative;
+    top: 5%;
+    left: 75px
+}
+
+#voterUI{
+    position: absolute;
+    top: 200px;
+    left:70%;
+    margin: 0px 0px 0px -200px;
+    padding: 0px;
+    width: 425px;
+    height: 400px;
+    background-color: #FAFAFA;
+    border-style: solid;
+    border-radius:10px;
+    border-width: 2px;
+    border-color: #BFBFBF;
+}
+
+#voterid-label{
+    position: relative;
+    top: 5%;
+    left: 5%;
+    display: inline-block;
+}
+
+#addvoter{
+    position: relative;
+    top: 5%;
+    left: 50px
+}

@@ -1,0 +1,598 @@
+{
+  "contractName": "vote",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/ray/Desktop/junior2/NM/DAPP-GoVote/contracts/vote.sol\":\"vote\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/ray/Desktop/junior2/NM/DAPP-GoVote/contracts/vote.sol\":{\"keccak256\":\"0xf59731baf0ef74d25f3939aa4e6ea4de20151682e1d8a91dfbcd44c5181aea7c\",\"urls\":[\"bzz-raw://c43f0ec643add374d4ae7c36003d18b3389159972ad53eaecec4f155d8bfe505\",\"dweb:/ipfs/QmdF9a4wTeWHsVopdUMcm2eorxvEMdqiAiJyZ7Am3Js9gD\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a7231582058b88b3a4181a0287aac5357be5e1f96cbc561ce4796e8776d66873786ffeed164736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582058b88b3a4181a0287aac5357be5e1f96cbc561ce4796e8776d66873786ffeed164736f6c63430005100032",
+  "sourceMap": "33:232:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;33:232:4;;;;;;;",
+  "deployedSourceMap": "33:232:4:-;;;;;",
+  "source": "pragma solidity >=0.5.0 <0.6.0;\n\ncontract vote {\n    struct ballot{\n        string candidate;\n        string item;\n        bool sent;\n    }\n    function write_candidate(ballot storage paper, string memory result) internal {\n        paper.candidate = result;\n    }\n}",
+  "sourcePath": "/Users/ray/Desktop/junior2/NM/DAPP-GoVote/contracts/vote.sol",
+  "ast": {
+    "absolutePath": "/Users/ray/Desktop/junior2/NM/DAPP-GoVote/contracts/vote.sol",
+    "exportedSymbols": {
+      "vote": [
+        2412
+      ]
+    },
+    "id": 2413,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2390,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:31:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2412,
+        "linearizedBaseContracts": [
+          2412
+        ],
+        "name": "vote",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "vote.ballot",
+            "id": 2397,
+            "members": [
+              {
+                "constant": false,
+                "id": 2392,
+                "name": "candidate",
+                "nodeType": "VariableDeclaration",
+                "scope": 2397,
+                "src": "76:16:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 2391,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "76:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2394,
+                "name": "item",
+                "nodeType": "VariableDeclaration",
+                "scope": 2397,
+                "src": "102:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 2393,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "102:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2396,
+                "name": "sent",
+                "nodeType": "VariableDeclaration",
+                "scope": 2397,
+                "src": "123:9:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 2395,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "123:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "ballot",
+            "nodeType": "StructDefinition",
+            "scope": 2412,
+            "src": "53:86:4",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 2410,
+              "nodeType": "Block",
+              "src": "222:41:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 2408,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 2404,
+                        "name": "paper",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2399,
+                        "src": "232:5:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ballot_$2397_storage_ptr",
+                          "typeString": "struct vote.ballot storage pointer"
+                        }
+                      },
+                      "id": 2406,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "candidate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2392,
+                      "src": "232:15:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 2407,
+                      "name": "result",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2401,
+                      "src": "250:6:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "232:24:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 2409,
+                  "nodeType": "ExpressionStatement",
+                  "src": "232:24:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 2411,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "write_candidate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2402,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2399,
+                  "name": "paper",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2411,
+                  "src": "169:20:4",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_ballot_$2397_storage_ptr",
+                    "typeString": "struct vote.ballot"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 2398,
+                    "name": "ballot",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 2397,
+                    "src": "169:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_ballot_$2397_storage_ptr",
+                      "typeString": "struct vote.ballot"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2401,
+                  "name": "result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2411,
+                  "src": "191:20:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2400,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "191:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "168:44:4"
+            },
+            "returnParameters": {
+              "id": 2403,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "222:0:4"
+            },
+            "scope": 2412,
+            "src": "144:119:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 2413,
+        "src": "33:232:4"
+      }
+    ],
+    "src": "0:265:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/ray/Desktop/junior2/NM/DAPP-GoVote/contracts/vote.sol",
+    "exportedSymbols": {
+      "vote": [
+        2412
+      ]
+    },
+    "id": 2413,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2390,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:31:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2412,
+        "linearizedBaseContracts": [
+          2412
+        ],
+        "name": "vote",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "vote.ballot",
+            "id": 2397,
+            "members": [
+              {
+                "constant": false,
+                "id": 2392,
+                "name": "candidate",
+                "nodeType": "VariableDeclaration",
+                "scope": 2397,
+                "src": "76:16:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 2391,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "76:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2394,
+                "name": "item",
+                "nodeType": "VariableDeclaration",
+                "scope": 2397,
+                "src": "102:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 2393,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "102:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2396,
+                "name": "sent",
+                "nodeType": "VariableDeclaration",
+                "scope": 2397,
+                "src": "123:9:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 2395,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "123:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "ballot",
+            "nodeType": "StructDefinition",
+            "scope": 2412,
+            "src": "53:86:4",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 2410,
+              "nodeType": "Block",
+              "src": "222:41:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 2408,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 2404,
+                        "name": "paper",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2399,
+                        "src": "232:5:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ballot_$2397_storage_ptr",
+                          "typeString": "struct vote.ballot storage pointer"
+                        }
+                      },
+                      "id": 2406,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "candidate",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2392,
+                      "src": "232:15:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 2407,
+                      "name": "result",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2401,
+                      "src": "250:6:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "232:24:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 2409,
+                  "nodeType": "ExpressionStatement",
+                  "src": "232:24:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 2411,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "write_candidate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2402,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2399,
+                  "name": "paper",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2411,
+                  "src": "169:20:4",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_ballot_$2397_storage_ptr",
+                    "typeString": "struct vote.ballot"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 2398,
+                    "name": "ballot",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 2397,
+                    "src": "169:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_ballot_$2397_storage_ptr",
+                      "typeString": "struct vote.ballot"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2401,
+                  "name": "result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2411,
+                  "src": "191:20:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2400,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "191:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "168:44:4"
+            },
+            "returnParameters": {
+              "id": 2403,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "222:0:4"
+            },
+            "scope": 2412,
+            "src": "144:119:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 2413,
+        "src": "33:232:4"
+      }
+    ],
+    "src": "0:265:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "1592990226640": {
+      "events": {},
+      "links": {},
+      "address": "0xA185200a457da2138d4Cee21D03B0ABAc75566d0",
+      "transactionHash": "0x981c9da7ffd1020715f5cac293e546aef20fff5d8b851d8f744a33dafda8b459"
+    }
+  },
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-06-24T09:17:32.276Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

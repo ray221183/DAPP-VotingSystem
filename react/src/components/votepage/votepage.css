@@ -1,0 +1,34 @@
+#vptitle{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    color: #000000;
+}
+
+#listcand{
+    position: absolute;
+    top: 200px;
+    left:30%;
+    margin: 0px 0px 0px -200px;
+    padding: 0px;
+    width: 475px;
+    height: 400px;
+    background-color: #FAFAFA;
+    border-style: solid;
+    border-radius:10px;
+    border-width: 2px;
+    border-color: #BFBFBF;
+}
+
+#selectedmessage{
+    position: absolute;
+    top: 600px;
+    left: 700px;
+    color: rgb(255, 0, 21);
+}
+
+#sendvote{
+    position: absolute;
+    top: 620px;
+    left: 1100px;
+}

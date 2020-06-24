@@ -1,0 +1,123 @@
+#view{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin: 0px 0px 0px -600px;
+    padding: 0px;
+    width: 1200px;
+    height: 700px;
+    background-color: #FFFFFF;
+    border-radius:10px;
+    box-shadow:0px 0px 5px #EDEDED;
+}
+#topic-control{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin: 0px 0px 0px -400px;
+    padding: 0px 0px 0px 0px;
+    width: 800px;
+    height: 30px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 20px;
+}
+#start{
+    position: absolute;
+    top: 5px;
+    left: 685px;
+}
+#end{
+    position: absolute;
+    top: 5px;
+    left: 730px;
+}
+#item{
+    position: absolute;
+    top: 5px;
+    left: 460px;
+}
+#add-item{
+    position: absolute;
+    top: 5px;
+    left: 615px;   
+}
+#delete-all{
+    position: absolute;
+    top: 5px;
+    left: 790px;  
+}
+#cut-line{
+    margin-top: 60px;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+#items{
+    position: absolute;
+    top:70px;
+    left: 50%;
+    margin: 0px 0px 0px -450px;
+    padding: 0px 0px 0px 100px;
+    width: 800px;
+    height: 700px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 20px;
+}
+#items div{
+    width: 600px;
+    height: 30px;
+    margin: 0px 0px 5px 0px;
+    padding: 0px 0px 0px 10px;
+    border-style: solid;
+    border-radius:3px;
+    border-width: 1px;
+    border-color: #020000;
+    background-color: cornsilk;
+    display: inline-block;
+}
+#view-result{
+    position: absolute;
+    top: 5px;
+    left: 450px;
+    width: 50px;
+}
+#edit{
+    position: absolute;
+    top: 5px;
+    left: 505px;
+    width: 40px;
+}
+#delete{
+    position: absolute;
+    top: 5px;
+    left: 550px;
+    width: 50px;
+}
+#status-0{
+    position: absolute;
+    top: 5px;
+    left: 770px;
+    width: 20px;
+    height: 20px;
+    background-color: #888888;
+    border-radius: 50%;
+}
+#status-1{
+    position: absolute;
+    top: 5px;
+    left: 770px;
+    width: 20px;
+    height: 20px;
+    background-color: #77FF00;
+    border-radius: 50%;
+}
+#status-2{
+    position: absolute;
+    top: 5px;
+    left: 770px;
+    width: 20px;
+    height: 20px;
+    background-color: #FF0000;
+    border-radius: 50%;
+}
